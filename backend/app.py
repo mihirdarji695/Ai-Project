@@ -610,22 +610,29 @@ def generate_all_materials():
     """Generate all educational materials from a single syllabus"""
     try:
         data = request.json
-        syllabus_id = data.get('syllabus_id')
+        syllabus_id : int = data.get('syllabus_id')
         
         if not syllabus_id or syllabus_id not in syllabi:
             return jsonify({'error': 'Invalid syllabus ID'}), 400
-            
+      
         syllabus = syllabi[syllabus_id]
         
         # 1. Generate questions for each topic with different taxonomies and difficulties
         generated_questions = []
         taxonomies = ['Remember', 'Understand', 'Apply', 'Analyze', 'Evaluate', 'Create']
         difficulties = ['Easy', 'Medium', 'Hard']
-        
+        syllabus['topics'] = [
+    {'title': unit[0], 'content': unit[1]}  # Convert each tuple to a dictionary
+    for unit in syllabus['topics']
+]
         for topic in syllabus['topics']:
             for taxonomy in taxonomies[:3]:  # Use first 3 taxonomies for brevity
                 for difficulty in difficulties[:2]:  # Use first 2 difficulties for brevity
                     questions_per_combo = 1  # Limit questions per combination
+                    
+                    print("syllabus topics",syllabus['topics'])
+                    print("syllabus topics type",type(syllabus['topics']))
+                    print("Topic",type(topic))
                     topic_questions = generate_questions_for_topic(
                         topic['content'],
                         taxonomy,

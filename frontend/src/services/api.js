@@ -28,6 +28,9 @@ export const uploadSyllabus = async (file) => {
 // Generate all materials from syllabus
 export const generateAllMaterials = async (syllabusId) => {
   try {
+    if(!syllabusId){
+      throw new Error("Syllabus id is required")
+    }
     const response = await fetch(`${API_URL}/generate-all-materials`, {
       method: 'POST',
       headers: {
