@@ -1,0 +1,37 @@
+{
+  "course_outcomes": {
+    "CO1": "Understand and apply fundamental concepts and principles of the subject",
+    "CO2": "Analyze and solve complex problems using appropriate methodologies",
+    "CO3": "Design and implement solutions using modern tools and technologies",
+    "CO4": "Evaluate and select appropriate approaches for given scenarios",
+    "CO5": "Create innovative solutions to real-world problems",
+    "CO6": "Communicate technical concepts effectively",
+    "CO7": "Work effectively in teams and demonstrate leadership skills",
+    "CO8": "Apply ethical principles in professional practice",
+    "CO9": "Demonstrate lifelong learning abilities",
+    "CO10": "Apply project management principles in practice"
+  },
+  "subject_specific_outcomes": {
+    "Computer Science": {
+      "CO1": "Design and implement efficient algorithms",
+      "CO2": "Develop software applications using modern technologies",
+      "CO3": "Analyze and optimize system performance",
+      "CO4": "Implement secure and scalable solutions",
+      "CO5": "Apply machine learning and AI concepts"
+    },
+    "Engineering": {
+      "CO1": "Apply engineering principles to solve problems",
+      "CO2": "Design and analyze engineering systems",
+      "CO3": "Conduct experiments and analyze results",
+      "CO4": "Use modern engineering tools and software",
+      "CO5": "Apply safety and sustainability principles"
+    },
+    "Business": {
+      "CO1": "Analyze business problems and opportunities",
+      "CO2": "Develop strategic business solutions",
+      "CO3": "Apply financial and marketing principles",
+      "CO4": "Implement effective management practices",
+      "CO5": "Evaluate business performance metrics"
+    }
+  }
+} 

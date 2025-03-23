@@ -1,0 +1,2481 @@
+Topic,Bloom’s Taxonomy,Difficulty,Question
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Remember,Medium,"Here are five unique questions based on the topic of ""Unit I: Advanced C Concept of Pointers"" that align with Bloom’s Taxonomy level ""Remember"" and are of medium difficulty:"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Remember,Medium,"1. **Question:** What is a pointer in C programming, and how do you declare a pointer variable? Provide an example."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Remember,Medium,2. **Question:** Explain the difference between the address-of operator (&) and the indirection operator (*) in the context of pointers. Give a code snippet to illustrate your explanation.
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Remember,Medium,3. **Question:** Describe how pointer arithmetic works in C. What are the results of adding or subtracting an integer value from a pointer? Provide an example to support your answer.
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Remember,Medium,"4. **Question:** Define the terms ""call by value"" and ""call by reference"" in relation to function parameters and pointers. How does using pointers affect the ability to return multiple values from a function?"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Remember,Medium,"5. **Question:** What is meant by dynamic memory allocation in C? Describe the functions used for allocating and freeing memory, and provide an example of how to allocate memory for an array dynamically."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Remember,Medium,"These questions focus on foundational knowledge of pointers while encouraging students to recall definitions, concepts, and examples relevant to the subject matter."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Understand,Medium,"Here are five unique questions based on the topic of advanced C concepts of pointers, designed to assess understanding at Bloom’s Taxonomy level ""Understand"" with a medium difficulty level:"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Understand,Medium,1. **Explain the significance of the (&) operator in the context of pointers. How does it differ from the indirection (or dereferencing) operator (*)? Provide examples to illustrate your explanation.**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Understand,Medium,"2. **Describe how pointer arithmetic functions in C. What operations can be performed on pointers, and how do these operations affect the memory addresses that the pointers refer to? Give examples to clarify your explanations.**"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Understand,Medium,"3. **In the context of function calls, differentiate between call by value and call by reference concerning pointers. How does using pointers enable a function to return multiple values? Provide a code snippet to demonstrate this concept.**"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Understand,Medium,4. **Differentiate between an array name and a pointer in C. How does passing a one-dimensional array to a function differ from passing a two-dimensional array? Illustrate your answer with code examples that highlight these differences.**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Understand,Medium,"5. **What are the potential risks associated with dynamic memory allocation, such as memory leaks and memory corruption? Explain how these issues can arise when using pointers, and suggest strategies to prevent them.**"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Understand,Medium,These questions encourage a deeper understanding of the concepts related to pointers in C programming while ensuring that learners engage with key ideas and apply their knowledge.
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Apply,Medium,"Here are five unique questions about ""Unit I: Advanced C Concept of Pointers,"" designed to engage students at the ""Apply"" level of Bloom’s Taxonomy with medium difficulty:"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Apply,Medium,"1. **Pointer Initialization and Dereferencing**: Write a C function that takes an integer as input, initializes a pointer to that integer, and then prints the value using the dereferencing operator. Demonstrate this in a main program, ensuring that the function correctly modifies the original integer value."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Apply,Medium,"2. **Pointer Arithmetic**: Given an array of integers, write a C program that uses pointer arithmetic to calculate and print the sum of all the elements in the array. Ensure you do not use array indexing but only pointer arithmetic features (like incrementing the pointer)."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Apply,Medium,3. **Passing Arrays to Functions**: Create a function in C that takes a one-dimensional array and its size as arguments and returns the largest element found in the array. Implement the function using pointer notation instead of array indexing. Write a main function to test your implementation.
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Apply,Medium,"4. **Dynamic Memory Allocation**: Develop a C program that allocates memory for an array of integers using `malloc`, populates it with values, and then doubles the size of the array using `realloc`. Make sure to free the memory before the program exits, and handle any potential memory leaks effectively."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Apply,Medium,5. **Pointers to Pointers**: Write a C program that demonstrates the use of pointers to pointers. The program should include a function that takes a pointer to a pointer to an integer and modifies the value it points to. Show how this affects the original integer in the main function.
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Analyze,Medium,"Here are five unique questions based on the topic ""Unit I: Advanced C Concept of Pointers,"" designed to encourage analysis at a medium difficulty level according to Bloom's Taxonomy:"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Analyze,Medium,1. **Question 1:**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Analyze,Medium,"Given a function that takes a pointer to an array and modifies its elements, analyze the implications of using call by reference versus call by value in this scenario. What potential issues might arise regarding memory access and data integrity when using one approach over the other?"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Analyze,Medium,2. **Question 2:**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Analyze,Medium,"Consider a program that utilizes both single and double pointers to manage a dynamic array of integers. Analyze how memory allocation, reallocation, and deallocation would differ if the program were to use static arrays instead. What advantages and disadvantages might each approach offer?"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Analyze,Medium,3. **Question 3:**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Analyze,Medium,"In the context of pointer arithmetic, evaluate how pointer comparisons work when dealing with arrays. If two pointers point to elements within the same array, analyze the behavior of pointer subtraction. What does the result signify about the relative positions of the pointers within the array?"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Analyze,Medium,4. **Question 4:**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Analyze,Medium,"Examine the differences between null pointers and void pointers in C. Analyze scenarios in which each type of pointer would be appropriate and how they affect function parameters and return types, particularly in the context of generic programming."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Analyze,Medium,5. **Question 5:**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Analyze,Medium,"Analyze a code snippet that uses an array of pointers to strings, incorporating function calls that manipulate these strings. Discuss how the behavior of the program changes when passing the array to functions with regard to memory efficiency and data modification, including any potential for memory leaks or corruption."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,"Here are five unique questions based on the topic ""Unit I: Advanced C Concept of Pointers,"" adhering to Bloom's Taxonomy level ""Evaluate"" and of medium difficulty:"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,1. **Evaluate the Impact of Pointer Arithmetic:**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,"Given an integer array `int arr[5] = {10, 20, 30, 40, 50};` along with a pointer `int *ptr = arr;`, evaluate what would happen if you execute the following statements: `ptr += 2; *ptr += 5;`. How does this modify the original array, and what are the implications of such pointer arithmetic in terms of memory access?"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,2. **Analyze the Use of Pointers in Function Calls:**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,Consider the following function declaration:
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,```c
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,"void updateValues(int *a, int *b) {"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,*a += 5;
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,*b += 10;
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,}
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,```
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,Evaluate the effectiveness of using pointers in this function as opposed to passing by value. Provide examples of scenarios where passing by reference would significantly impact performance or result.
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,3. **Compare and Contrast Array and Pointer Functionality:**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,"Reflect on the statement: ""An array name can be treated as a pointer."" Evaluate the accuracy of this statement using examples to illustrate the differences in behavior when an array is passed to a function as compared to a pointer pointing to the first element of that array. What potential pitfalls could arise from misunderstanding their equivalence?"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,4. **Assess Dynamic Memory Management:**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,Review the following code snippet:
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,```c
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,int *array = (int *)malloc(5 * sizeof(int));
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,// Assume code to fill array
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,free(array);
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,array = NULL;
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,```
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,"Evaluate whether this implementation effectively manages dynamic memory allocation and deallocation. What are risks associated with failing to properly free memory in this manner, and how can memory leaks or corruption affect a running program?"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,5. **Evaluate the Concept of Pointer Types:**
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,"Analyze the distinctions between a pointer to a constant, a constant pointer, and a pointer to a pointer. Given the declarations:"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,```c
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,const int *ptr1;
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,int *const ptr2;
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,int **ptr3;
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,```
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Evaluate,Medium,"Evaluate their respective use cases. In what scenarios would each type of pointer be beneficial, and how would attempting to modify the values they point to lead to compile-time errors or unintended behaviors?"
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Create,Medium,"Here are five unique questions at a medium difficulty level focusing on ""Unit I: Advanced C Concept of Pointers,"" designed to encourage creativity and application of knowledge in line with Bloom’s Taxonomy level ""Create."""
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Create,Medium,"1. **Design a Function**: Create a function in C that takes two integers as parameters, dynamically allocates an array based on their values, and returns a pointer to that array. The function should also return the size of the array through a pointer parameter. Write the full implementation of this function, including memory management to free the allocated memory."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Create,Medium,"2. **Pointer and Array Interaction**: Construct an example that illustrates the difference between an array name and a pointer. Write a function that accepts a one-dimensional array and uses pointer arithmetic to traverse the elements of the array, printing each value. Discuss how the array name can be treated as a pointer within the function."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Create,Medium,3. **Pointer to Functions**: Develop a small C program that demonstrates the use of function pointers. Create two simple functions (such as addition and subtraction) and use a pointer to a function to allow the user to select either operation. Implement error handling for invalid function selection.
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Create,Medium,"4. **Memory Management Challenge**: Design a mini-program that allocates a two-dimensional array dynamically, prompts the user to fill it with integers, and then calculates the sum of all elements in a row or column as specified by the user. Include proper memory allocation, freeing resources, and handling of potential memory leaks."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Create,Medium,"5. **Advanced Use of Pointers**: Formulate a scenario where you need to create a structure representing a book with attributes like title, author, and year of publication. Implement a pointer to this structure and write functions to manipulate the structure using both value and reference passing. Discuss the implications for memory management when dynamically allocating the structure."
+"Unit I: Advanced C Concept of Pointers 
+
+Introduction  -  Concept  of  memory  addresses,  use  of  the  (&)
+operator.
+
+Pointer Execution – Declaring and Initializing a pointer, Indirection
+Operator and dereferencing a pointer.
+
+Pointer   Arithmetic   –   Assignment,   Addition-subtraction   with integers, pointer comparison.
+
+Use of Pointers – Returning more than one value from the function
+(Call by value and call by References concept).
+
+Pointers and Arrays – One dimensional Arrays and pointers, Difference between array name and pointers, passing one dimensional and two dimensional array to functions, Pointers for character array(strings), Array of pointers 2-D Array and pointer, pointer to function.
+
+Dynamic memory allocation – Array allocation, Memory freeing, Memory reallocation.
+
+Informative- void Pointers, Null pointers, Pointers to pointers, Memory  leak  and  Memory  corruption,  pointer  to  constant  and constant pointer.",Create,Medium,These questions will challenge students to apply advanced C pointer concepts while promoting creativity in problem-solving.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Remember,Medium,"Here are five unique questions based on the specified topic, aligned with Bloom's Taxonomy level ""Remember"" and with medium difficulty:"
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Remember,Medium,1. **Define a structure in C++.** What is the syntax for declaring a structure and creating a structure variable? Provide an example with at least two members.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Remember,Medium,2. **What is the key difference between a structure and a union in C++?** Illustrate your answer by explaining how memory allocation differs between the two data types.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Remember,Medium,3. **What are enumerated data types (enum) in C++?** Give an example of how to declare an enumerated type and how to use it in a program.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Remember,Medium,4. **Explain how to initialize a structure in C++.** What is the syntax for both default initialization and specifying initial values for members? Provide a code snippet to demonstrate these methods.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Remember,Medium,5. **What is a typedef in C++?** How is it used with structures? Create a simple example that shows how typedef can simplify the structure usage in a program.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Understand,Medium,"Here are five unique questions designed to assess understanding of the topic on user-defined data types, including structures, unions, and enumerated data types, aligned with Bloom’s Taxonomy at the ""Understand"" level and set at a medium difficulty:"
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Understand,Medium,1. **Explain the concept of a structure in the context of user-defined data types. How do you declare a structure and create structure variables? Provide an example in your explanation.**
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Understand,Medium,2. **Describe how members of a structure can be accessed in a given program. What are the implications of initializing a structure upon declaration? Illustrate your answer with a code snippet.**
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Understand,Medium,3. **What is the difference between structures and unions in C or C++? Compare their memory usage and provide an example scenario where a union would be more advantageous than a structure.**
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Understand,Medium,4. **How do you create an array of structures in a programming context? Provide a brief discussion on the benefits of using arrays of structures over multiple individual structure variables. Include an example.**
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Understand,Medium,5. **What role do enumerated data types play in programming? Discuss how they enhance code readability and maintenance. Provide an example of an enumerated type and explain its use in a practical application.**
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Apply,Medium,"Sure! Here are five unique questions based on the topic ""Unit II: User Defined Data types – Structures, Union, and Enumerated data type,"" tailored to the ""Apply"" level of Bloom's Taxonomy and a medium difficulty level:"
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Apply,Medium,"1. **Design a Structure**: Create a structure named `Book` that contains the following members: `title`, `author`, `price`, and `publicationYear`. Write a program in C that creates an array of structures to store information for five different books and then prints this information in a user-friendly format."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Apply,Medium,"2. **Function with Structures**: Write a function that accepts a structure of type `Rectangle` (with members `length` and `width`) and returns the area of the rectangle. Implement this function in a C program that reads the dimensions from user input, uses your function to calculate the area, and displays the result."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Apply,Medium,"3. **Nested Structures**: Create a nested structure named `Student` that contains the name, roll number, and a structure named `Address` to hold street, city, and postal code. Write a C program that initializes a `Student` variable, assigns values to all its members, and prints out the complete information of the student."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Apply,Medium,"4. **Union Example**: Define a union named `Data` that can hold either an integer, a float, or a character. Write a program that initializes the union with each type of variable and prints out the values along with the size of the union. Discuss how this demonstrates the memory efficiency of unions compared to structures."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Apply,Medium,"5. **Enumerated Type in a Function**: Define an enumerated data type called `Day` that represents the days of the week. Write a function that takes a `Day` value as an argument and returns the corresponding day number (0 for Sunday, 1 for Monday, etc.). Implement this function in a C program that prompts the user to enter a day and displays its numerical representation."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Apply,Medium,"These questions prompt application of the concepts in real coding scenarios, engaging students in problem-solving while leveraging their understanding of user-defined data types."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Analyze,Medium,"Here are five unique questions based on Bloom's Taxonomy level ""Analyze"" and medium difficulty for the topic ""Unit II: User Defined Data types – Structures, Union and Enumerated data type"":"
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Analyze,Medium,1. **Question 1:** Compare and contrast the use of structures and unions in C programming. In what scenarios would using a union be more beneficial than a structure? Provide examples to support your analysis.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Analyze,Medium,"2. **Question 2:** Given a structure that includes another structure as a member (nested structures), demonstrate how you would initialize and access the members of both the parent and nested structures. What are the potential advantages of using nested structures in complex data modeling?"
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Analyze,Medium,"3. **Question 3:** In the context of structure operations, analyze the implications of copying structures versus comparing their values. Discuss the differences in memory handling and possible pitfalls when using these operations in a large-scale application, including examples."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Analyze,Medium,"4. **Question 4:** Consider an array of structures and a structure containing an array. Analyze the differences in memory allocation, initialization, and access methods for these two data arrangements. How would these differences influence performance in terms of time complexity during runtime?"
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Analyze,Medium,5. **Question 5:** Evaluate the role of enumerated data types and bit fields within structures. How do these features enhance data representation and manipulation in programming? Provide scenarios where utilizing enumerated types and bit fields would improve code clarity and efficiency.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Evaluate,Medium,"Here are five unique questions related to Unit II: User Defined Data Types (Structures, Unions, and Enumerated Data Types) that align with the ""Evaluate"" level of Bloom’s Taxonomy and have a medium difficulty level:"
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Evaluate,Medium,"1. **Evaluation of Efficiency**: Compare and contrast the use of structures and unions in memory allocation. Under what circumstances would you recommend using a union over a structure, and why? Provide examples to support your evaluation."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Evaluate,Medium,"2. **Assessment of Data Management**: Given a scenario where you are managing employee records that include various types of data (name, ID, salary, and department), evaluate the effectiveness of using nested structures versus an array of structures. What are the advantages and disadvantages of each approach in terms of data access and modification?"
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Evaluate,Medium,3. **Critical Analysis of Data Types**: Analyze the impact of using enumerated data types in a program that handles different states of a traffic light system. How do enumerated types enhance code readability and maintainability in comparison to integer constants? Provide a code sample to illustrate your points.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Evaluate,Medium,4. **Comparison of Structure Operations**: Evaluate the implications of implementing structure copying versus structure pointers in a program that processes large datasets. Discuss the memory and performance trade-offs associated with each method in your evaluation.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Evaluate,Medium,"5. **Integration of Advanced Concepts**: Assess the use of an array within a structure that also contains a pointer to another structure. In what scenarios could this design lead to complexities in memory management? Illustrate your evaluation with a practical example, including potential pitfalls and best practices."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Evaluate,Medium,These questions are designed to encourage critical thinking and deeper understanding of the concepts surrounding user-defined data types and their operations.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Create,Medium,"Here are five unique questions based on the specified topic ""Unit II: User Defined Data types – Structures, Union, and Enumerated data type,"" focusing on the creation level of Bloom's Taxonomy:"
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Create,Medium,"1. **Design a Data Management System:** Create a structure to manage a simple library system where each book has attributes like title, author, year of publication, and a boolean to check if it is currently checked out. Design a function that allows users to add new books to the system and outputs the current list of available books in a user-friendly format."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Create,Medium,"2. **Implement a Complex User Profile:** Develop a structure that represents a user profile for an online platform. This structure should include basic information, an array for a list of friends (with names and user IDs), and a nested structure for user statistics (like number of posts, likes, and comments). Implement a function that can initialize this structure and display the profile information in a formatted way."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Create,Medium,3. **Create an Inventory Management System:** Build an inventory system using unions and structures where each inventory item can either be a book or a multimedia item (such as a DVD). Define an enumerated data type for item categories and write a function that takes an array of this structure and prints the items based on their category.
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Create,Medium,"4. **Design a Custom Data Type for a Game:** Create an enumerated data type to represent the different states of a game character (e.g., Idle, Attacking, Defending, and Dead). Furthermore, build a structure that encapsulates character attributes including health, strength, and the current state. Design and implement a function that updates the character state based on player actions and prints the current status."
+"Unit II: User Defined Data types – Structures, Union and Enumerated data type. 
+
+Basic structure operations- Declaring structures and structure variables, Accessing the members of the structure, Initialization of Structures, Structure comparisons and copying, type def and its use.
+
+Advanced - Nested structures, Array within the structure and Array of structures, Structures with functions and structures with pointers. Union and its operations
+
+Enumerated data type, bit field",Create,Medium,"5. **Bit Field for Compact Data Representation:** Develop a structure using bit fields to compactly store a set of flags representing different user settings (like notifications, privacy settings, and theme). Write a function to initialize this structure, modify specific bits based on the user's preferences, and output the current setting statuses in a clear format."
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Remember,Medium,"Here are five unique questions for the topic ""Unit III: Files in C"" that align with Bloom's Taxonomy level ""Remember"" and have a medium level of difficulty:"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Remember,Medium,1. **What are the primary differences between text files and binary files in C? Provide specific characteristics of each type.**
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Remember,Medium,"2. **Describe the purpose of the `fopen()` and `fclose()` functions in C. What are the parameters required by `fopen()`, and what does each of the modes (e.g., ""r"", ""w"", ""a"") signify?**"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Remember,Medium,3. **List at least three file functions used for reading data from files in C. Explain briefly how each function operates.**
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Remember,Medium,4. **What is the significance of the `EOF` constant in file handling in C? How can the `feof()` function be used to detect the end of a file?**
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Remember,Medium,"5. **In C, what are the differences between sequential access and random access to files? Provide examples of functions used for random access file operations.**"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Understand,Medium,"Here are five unique questions on the topic ""Unit III: Files in C,"" crafted to align with Bloom’s Taxonomy level ""Understand"" and at a medium difficulty level:"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Understand,Medium,1. **Explain the purpose and differences between text files and binary files in C. How does the way data is stored in each type affect how you read from or write to these files?**
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Understand,Medium,2. **Describe the various modes in which a file can be opened in C using the `fopen()` function. Provide examples of scenarios where each mode might be appropriately used.**
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Understand,Medium,3. **What is the significance of the EOF (End of File) marker in C? Explain how the `feof()` function can be used in a program to manage file reading operations correctly.**
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Understand,Medium,"4. **Compare and contrast sequential access with random access for file operations in C. How would you use functions like `fseek()`, `ftell()`, and `rewind()` to navigate through a file? Provide examples to illustrate your answer.**"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Understand,Medium,5. **Discuss the process and importance of error handling during file operations in C. What are the roles of the `clearerr()` and `perror()` functions in managing file-related errors?**
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Apply,Medium,"Here are five unique questions based on ""Unit III: Files in C,"" targeting the ""Apply"" level of Bloom's Taxonomy and having a medium difficulty level:"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Apply,Medium,"1. **Question 1**: Write a C program that prompts the user to enter five integers, stores them in a file, and then reads the integers back from the file to display them. Ensure to implement error handling to check if the file operations were successful."
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Apply,Medium,"2. **Question 2**: Explain how you would use `fwrite()` and `fread()` to store and retrieve a structure representing a student record. Create a sample program that includes defining the structure, writing multiple records to a binary file, and reading them back using the appropriate file functions."
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Apply,Medium,"3. **Question 3**: In a given C program, you have a text file named ""data.txt"" containing names. Modify the program to include functionality that allows you to append a new name to this file without overwriting its existing content. Describe the mode used for opening the file and the function used to write the new name."
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Apply,Medium,"4. **Question 4**: Demonstrate the use of `fseek()`, `ftell()`, and `rewind()` in manipulating a binary file that contains multiple records of a specified structure. Write a code snippet that illustrates moving to a specific record and updating it with new data."
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Apply,Medium,5. **Question 5**: Create a C function that counts the total number of words in a text file. Utilize `fgets()` to read the file line by line and determine word boundaries. Ensure that your function includes proper error handling to address potential issues such as file not found.
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Analyze,Medium,"Here are five unique questions that encourage analysis of the topic ""Unit III: Files in C"" at a medium difficulty level, based on Bloom's Taxonomy:"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Analyze,Medium,1. **Compare and Contrast**: Analyze the differences between text files and binary files in C. What are the implications of these differences on the way data is read and written? Provide examples of when it would be more advantageous to use one type over the other.
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Analyze,Medium,"2. **Evaluate Function Use**: Given a scenario where a program needs to read from a file containing multiple records of varying lengths, evaluate the appropriateness of using `fgets()` versus `fread()`. What factors should be considered in making this decision, and what effects would each method have on performance and data integrity?"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Analyze,Medium,3. **Assess Error Handling**: Analyze how the error handling functions `clearerr()` and `perror()` can be used to improve the robustness of file handling operations in C. Discuss how they could be integrated into a file reading/writing workflow to enhance error detection and recovery.
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Analyze,Medium,"4. **Investigate File Access Modes**: Investigate the various modes provided by `fopen()` for opening files in C. Analyze how the chosen mode impacts subsequent file operations, especially in terms of data integrity and the ability to read/write data. Provide a specific example that illustrates the consequences of using an inappropriate mode."
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Analyze,Medium,"5. **Critique Random Access Techniques**: Critically evaluate the use of `fseek()`, `ftell()`, and related functions in achieving random access in files. What are the potential pitfalls of using these functions, and how can they affect the accuracy of data manipulation within a binary file? Illustrate with an example that demonstrates correct and incorrect usage of these functions."
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Evaluate,Medium,"Here are five unique questions based on the topic ""Unit III: Files in C"" that align with the ""Evaluate"" level of Bloom’s Taxonomy and are of medium difficulty:"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Evaluate,Medium,"1. **Question**: Given a scenario where you need to read user data from a text file and store it into a structured array of records, evaluate the effectiveness of using `fgets()` versus `fscanf()`. What factors would influence your choice between the two functions, and what potential errors might arise during their use in this context?"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Evaluate,Medium,"2. **Question**: You have been tasked with optimizing a program that writes large amounts of binary data to a file. Compare and contrast the use of `fwrite()` and `putw()` in terms of performance and efficiency. In what situations would one be preferred over the other, particularly concerning data integrity and speed of access?"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Evaluate,Medium,"3. **Question**: Analyze the differences between sequential and random access file handling in C. When implementing a text-based file system, evaluate how choosing one method over the other could affect the overall performance and usability of the file operations in a real-world application."
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Evaluate,Medium,4. **Question**: Consider a situation where your program needs to handle multiple file operations simultaneously. Evaluate the implications of using `feof()` to check for the end of a file versus directly checking the return value of read functions like `fgets()`. What are the possible pitfalls of relying solely on `feof()`?
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Evaluate,Medium,5. **Question**: Imagine you are developing a file management utility in C that allows users to rename and delete files. Evaluate the impact of error handling functions like `clearerr()` and `perror()` on the user experience. How could the presence or absence of robust error handling affect the reliability and safety of file operations in your utility?
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Create,Medium,"Here are five unique questions based on the topic ""Unit III: Files in C"" that align with the ""Create"" level of Bloom's Taxonomy at a medium difficulty level:"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Create,Medium,"1. **Design a File Management System:** Create a simple C program that manages a list of student records. The program should allow users to add, view, update, and delete student records stored in a text file. Discuss how you would implement file handling functions such as `fprintf()`, `fscanf()`, and file opening/closing operations to achieve this."
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Create,Medium,"2. **Implement Random Access:** Write a C program that demonstrates random access to a binary file. Your program should include functions for writing multiple records to the file, jumping to a specific record using `fseek()`, and displaying the record using `fread()`. How would you handle file pointer positions, and what considerations would you take into account for error handling?"
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Create,Medium,3. **Error Handling Strategy:** Construct a C function that opens a file in a specified mode and implements robust error handling using `perror()` and `clearerr()`. Give an example where this function could be used to handle various scenarios that might lead to file operation failures. What strategies would ensure the program continues running smoothly even when errors occur?
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Create,Medium,"4. **Convert Text to Binary:** Develop a program that reads data from a text file containing numerical values (one per line), converts them into a binary format, and saves them to a new binary file. Explain how you would use functions like `fgets()` for reading and `fwrite()` for writing, and discuss the advantages and challenges of binary files compared to text files."
+"Unit III: Files in C 
+
+Introduction – Streams in C, Types of Files.
+
+Files in C – Declaration of File pointer, Opening a File, Closing a file
+(fopen(), fclose()), Various modes to open the file.
+
+File  functions  for  Reading  data  from  files  –  fscanf(),  getw(), fgets(), fgetc(), fread()
+
+File functions for writing data to files- fprintf(), putw(), fputs(), fputc(), fwrite()
+
+Detecting the end of the file – what is EOF and feof() function
+
+Types of the files – Binary and Text files.
+
+Types of access to the file – Sequential and Random access, Difference between both, how to read and write data in both the cases, for random access (fseek(), ftell(), rewind(), fgetpos(), fsetpos())
+
+Error handling during File operations – clearer(), Perror()
+
+Files  of  records  –  Working  with  files  of  records  (fread()  and fwrite()).
+
+Other functions – Renaming a file, Removing a file, Command line
+Arguments.",Create,Medium,"5. **Implement a Rename and Delete Functionality:** Create a C program that takes a filename as input and provides options to rename and delete the file. Discuss how you would leverage the standard file handling functions like `rename()` and `remove()`, and how you would handle potential errors, such as file not found or permission issues. What checks would you include before performing the operations to ensure they are successful?"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Remember,Medium,"Here are five unique questions for the topic ""Unit IV: Advanced C concept – Bitwise operators and Pre-processor directives"" based on Bloom’s Taxonomy level ""Remember"" and difficulty ""Medium"":"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Remember,Medium,1. **What are the primary bitwise operators in C and how does each operator function?**
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Remember,Medium,"(This question prompts recall of the main bitwise operators such as AND, OR, NOT, XOR, and left/right shifts.)"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Remember,Medium,2. **Describe the purpose of the #define pre-processor directive in C and provide a simple example of its usage.**
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Remember,Medium,(This question requires remembering the function of the #define directive and illustrating it with an example.)
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Remember,Medium,3. **Explain the difference between the #include and #define pre-processor directives in C.**
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Remember,Medium,(This question seeks a recall of the distinct roles these two directives play in a C program.)
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Remember,Medium,"4. **What is the function of the bitwise NOT operator (~) in C, and how would it affect the binary representation of the integer 5?**"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Remember,Medium,(This question invites the recall of the bitwise NOT operation and requires a specific example using the integer 5.)
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Remember,Medium,5. **List and briefly explain three types of pre-processor directives used in C programming.**
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Remember,Medium,"(This question requires memorization of different types of pre-processor directives, such as #include, #define, and conditional directives.)"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Understand,Medium,"Here are five unique questions related to the topic ""Unit IV: Advanced C Concept – Bitwise Operators and Pre-processor Directives,"" designed to align with Bloom's Taxonomy level ""Understand"" and categorized as medium difficulty:"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Understand,Medium,"1. **Explain the function of each bitwise operator in C (AND, OR, Exclusive OR, NOT, and shift operators) and provide a simple example for each to demonstrate how they manipulate binary numbers.**"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Understand,Medium,2. **Describe the use and purpose of pre-processor directives in C. How do the directives #define and #include differ from one another in terms of functionality and usage?**
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Understand,Medium,3. **What are conditional directives in C? Provide an example of how you might use a conditional directive to include or exclude parts of code based on specific conditions.**
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Understand,Medium,"4. **In the context of C programming, explain what type qualifiers are and how they can be used to control the properties of variables. Include examples of commonly used type qualifiers.**"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Understand,Medium,5. **Discuss the purpose of predefined identifiers in C. Illustrate how predefined identifiers such as __DATE__ or __TIME__ can be utilized within a program to provide contextual information.**
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,"Here are five unique questions that encourage the application of knowledge related to ""Unit IV: Advanced C concept – Bitwise operators and Pre-processor directives,"" suitable for a medium difficulty level:"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,1. **Question 1:** Write a C function that takes two integer arguments and uses bitwise operators to compute their greatest common divisor (GCD). Explain how bitwise operations contribute to the efficiency of your solution.
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,"2. **Question 2:** Given the following C code snippet, identify and explain the effect of each bitwise operator used in the expressions. Then, demonstrate how modifying the operator (such as changing a bitwise AND to a bitwise OR) affects the output of the program."
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,```c
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,int x = 5; // 0101 in binary
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,int y = 3; // 0011 in binary
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,int result1 = x & y; // Bitwise AND
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,int result2 = x | y; // Bitwise OR
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,int result3 = x ^ y; // Bitwise XOR
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,```
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,"3. **Question 3:** Write a C program that utilizes pre-processor directives to define a constant for pi and conditionally compile a part of the code that calculates the area of a circle based on whether a specific macro (e.g., CALCULATE_AREA) is defined. Provide a brief explanation of how pre-processor directives influence the compilation process."
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,4. **Question 4:** Develop a C function that utilizes variable length arguments to compute the average of a varying number of integer inputs. Showcase how the implementation of this function can be adapted using pre-processor directives to customize the data type or format of the input parameters.
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Apply,Medium,5. **Question 5:** Create a C program that implements a simple logging system using pre-processor directives. Use conditional directives to enable or disable logging based on whether a debug mode is compiled. Explain how your approach uses different pre-processor directives and the impact they have on the code execution.
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Analyze,Medium,"Here are five unique questions that align with the ""Analyze"" level of Bloom's Taxonomy, focusing on Advanced C concepts, specifically Bitwise Operators and Pre-processor Directives. Each question is designed to have medium difficulty."
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Analyze,Medium,1. **Compare and Contrast**: Analyze the effects of using the bitwise AND operator (`&`) versus the bitwise OR operator (`|`) on a set of two integers. What will be the results of applying both operators on the integers 6 and 3 in binary form? Provide a step-by-step breakdown of the operations.
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Analyze,Medium,2. **Evaluate Use Cases**: Consider a scenario where you need to toggle specific bits of a byte representing a flag. Analyze how the bitwise XOR operator (`^`) can be utilized for this purpose. Provide an example of an 8-bit byte before and after toggling specific bits using this operator.
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Analyze,Medium,"3. **Conditional Compilation**: Given the various types of pre-processor directives, analyze how the use of `#ifdef`, `#ifndef`, and `#endif` can help manage code compilation based on certain conditions, especially in multi-platform development. Illustrate your explanation with a practical example where these directives would be useful."
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Analyze,Medium,"4. **Pre-processor Efficiency**: Analyze the advantages and potential drawbacks of using `#define` directives compared to declaring constants using `const` or `enum`. In what scenarios would one be preferred over the other, and how could that affect code readability and maintainability?"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Analyze,Medium,"5. **Bitwise Shift Operations**: Given a 16-bit integer value (e.g., `0b0110 1001 1010 1110`), analyze the outcome after applying the left shift operator (`<<`) and right shift operator (`>>`) with a shift count of 2. What are the implications of these operations on the binary representation of the original number, and how do they affect the integer value?"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Evaluate,Medium,"Here are five unique questions related to ""Unit IV: Advanced C Concepts – Bitwise Operators and Pre-processor Directives,"" designed to evaluate understanding at a medium difficulty level in accordance with Bloom's Taxonomy:"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Evaluate,Medium,1. **Evaluate the use of bitwise operators in optimizing performance in embedded systems.** Discuss how the performance of an application can be influenced by the choice of using bitwise operations instead of standard arithmetic operations. Provide examples to support your evaluation.
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Evaluate,Medium,2. **Assess the implications of using pre-processor directives such as `#define` and `#include` in a C program.** How can incorrect usage of these directives lead to potential errors or code maintenance issues? Illustrate your points with examples of both positive and negative impacts.
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Evaluate,Medium,"3. **Critically analyze the effectiveness of conditional pre-processor directives in managing code portability across different platforms.** How does the use of directives such as `#ifdef`, `#ifndef`, `#else`, and `#endif` enhance or hinder the development of cross-platform applications?"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Evaluate,Medium,4. **Compare and contrast the role of **bitwise shift operators** and arithmetic operators in performing multiplication and division operations.** In what scenarios would using shift operators be more advantageous? Provide specific examples to demonstrate your evaluation.
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Evaluate,Medium,5. **Evaluate the significance of predefined identifiers and type qualifiers in enhancing the safety and clarity of C code.** How do these features contribute to better error handling and type safety? Provide an example to illustrate how not using these features can lead to problems in a program.
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Create,Medium,"Here are five unique questions related to the topic of ""Unit IV: Advanced C Concept – Bitwise Operators and Pre-processor Directives"" that encourage creation-level thinking according to Bloom's Taxonomy:"
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Create,Medium,"1. **Design a Modular Program:** Create a C program that utilizes bitwise operators to perform a custom encryption and decryption mechanism for a string. The program should include pre-processor directives for configuration settings, allowing the user to define the shift amount for encryption via `#define`."
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Create,Medium,"2. **Build a Conditional Compilation Example:** Write a C code snippet that demonstrates the use of conditional pre-processor directives (`#ifdef`, `#ifndef`, `#endif`) to include or exclude debugging information based on whether a debugging mode is activated. Explain how this would benefit software maintenance."
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Create,Medium,"3. **Innovate a Macro for Matrix Operations:** Create a set of macros using the `#define` directive for performing bitwise operations on 2D arrays (like matrices). For example, implement a macro that computes the bitwise AND of two matrices and describe the corresponding error handling using pre-processor directives."
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Create,Medium,"4. **Develop a Custom Pre-processor Directive Report System:** Imagine you are developing a library to report the usage of certain pre-processor directives within a C project. Design a C program that analyzes the code and counts occurrences of `#include`, `#define`, and `#pragma`, providing a summary report of their usage in the compiled source files."
+"Unit IV: Advanced  C  concept  –  Bitwise  operators  and  Pre-processor directives.
+Bitwise Operators – Introduction, Bitwise operators (bitwise and,
+bitwise or, bitwise Exclusive or, bitwise not, bitwise shift operator). Pre-processor  Directives–  Types  of  pre-processor  directives,  # define,  #include,  #un  def,  #line,  pragma  directives,  Conditional directives,  Predefined  identifiers,  Type  Qualifiers,  variable  length arguments.",Create,Medium,5. **Construct a Header File with Variable-Length Arguments:** Write a header file that defines a function using variable-length arguments (`stdarg.h`) that allows users to perform a cumulative bitwise XOR operation on an arbitrary number of integers. Document how pre-processor directives can be used to validate the inputs and provide default values if necessary.

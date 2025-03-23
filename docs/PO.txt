@@ -1,0 +1,8 @@
+PO1: (Foundation Knowledge):Apply knowledge of mathematics, programming logic and coding fundamentals for solution architecture and problem solving.
+PO2:(Problem Analysis):Identify, review, formulate and analyze problems for primarily focusing on customer requirements using critical thinking frameworks.
+PO3: (Development of Solutions): Design, develop and investigate problems with as an innovative approach for solutions incorporating ESG/SDG goals.
+PO4: (Modern Tool Usage): Select, adapt and apply modern computational tools such as development of algorithms with an understanding of the limitations including human biases.
+PO5: (Individual and Teamwork): Function and communicate effectively as an individual or a team leader in diverse and multidisciplinary groups. Use methodologies such as agile.
+PO6: (Project Management and Finance): Use the principles of project management such as scheduling, work breakdown structure and be conversant with the principles of Finance for profitable project management.
+PO7: (Ethics): Commit to professional ethics in managing software projects with financial aspects. Learn to use new technologies for cyber security and insulate customers from malware.
+PO8: (Life-long learning): Change management skills and the ability to learn, keep up with contemporary technologies and ways of working

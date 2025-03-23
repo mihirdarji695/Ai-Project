@@ -1,0 +1,4 @@
+CO1: To understand the concepts of pointers, memory management, and user-defined data types like structures and unions.
+CO2: To apply advanced pointer operations, dynamic memory allocation techniques, and structure-based programming.
+CO3: To analyse file-handling operations, including sequential and random access techniques, for efficient data processing.
+CO4: To evaluate the use of preprocessor directives and bitwise operators to optimize and enhance program functionality.
