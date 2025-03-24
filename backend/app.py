@@ -629,10 +629,6 @@ def generate_all_materials():
             for taxonomy in taxonomies[:3]:  # Use first 3 taxonomies for brevity
                 for difficulty in difficulties[:2]:  # Use first 2 difficulties for brevity
                     questions_per_combo = 1  # Limit questions per combination
-                    
-                    print("syllabus topics",syllabus['topics'])
-                    print("syllabus topics type",type(syllabus['topics']))
-                    print("Topic",type(topic))
                     topic_questions = generate_questions_for_topic(
                         topic['content'],
                         taxonomy,

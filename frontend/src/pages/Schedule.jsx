@@ -5,21 +5,21 @@ import { toast } from "react-hot-toast";
 const Schedule = () => {
   const [schedule, setSchedule] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [syllabusData, setSyllabusData] = useState(null);
+  const [syllabusData, setSyllabusData] = useState();
   const [totalWeeks, setTotalWeeks] = useState(16);
   const [hoursPerWeek, setHoursPerWeek] = useState(3);
 
   useEffect(() => {
     // Check if syllabus data exists in localStorage
     const savedSyllabus = localStorage.getItem('currentSyllabus');
+  
     if (savedSyllabus) {
-      setSyllabusData(JSON.parse(savedSyllabus));
+      const syllabus = JSON.parse(savedSyllabus);
+   
+      setSyllabusData(syllabus);
     }
     
-    // Check if materials have been generated
-    if (localStorage.getItem('materialsGenerated') === 'true') {
-      generateSchedule();
-    }
+
   }, []);
 
 
@@ -30,38 +30,54 @@ const Schedule = () => {
       toast.error("Please upload a syllabus first");
       return;
     }
-
+  
     setLoading(true);
-    
+  
     try {
-      // In a real implementation, we would call the backend API
-      // For now, we'll generate a mock schedule based on the syllabus topics
-      
-      const topics = syllabusData.topics || [];
-      const units = groupTopicsByUnit(topics);
-      
-      // Calculate hours per unit based on total course duration
+      // Determine if the syllabus data includes a separate units array.
+      // If so, we assume that each unit corresponds to one topic entry.
+      let units = [];
+      if (syllabusData.units && syllabusData.topics) {
+        // Build units by matching the order of units with topics
+        units = syllabusData.units.map((unitName, index) => ({
+          title: unitName,
+          topics: [syllabusData.topics[index]]
+        }));
+      } else {
+        // Fall back to grouping topics by detecting unit titles
+        const topics = syllabusData.topics || [];
+        units = groupTopicsByUnit(topics);
+      }
+      console.log(units);
+  
+      // Calculate total course hours and hours per unit
       const totalHours = totalWeeks * hoursPerWeek;
       const hoursPerUnit = Math.floor(totalHours / units.length);
-      
+  
       let generatedSchedule = [];
       let currentWeek = 1;
       let currentHour = 1;
-      
+  
       units.forEach((unit, unitIndex) => {
-        const unitHours = unitIndex === units.length - 1 
-          ? totalHours - (hoursPerUnit * (units.length - 1)) // Assign remaining hours to last unit
-          : hoursPerUnit;
-          
+        // For the last unit, assign any remaining hours
+        const unitHours =
+          unitIndex === units.length - 1
+            ? totalHours - hoursPerUnit * (units.length - 1)
+            : hoursPerUnit;
+  
         const topicsInUnit = unit.topics;
-        const hoursPerTopic = Math.max(1, Math.floor(unitHours / topicsInUnit.length));
-        
+        // Prevent division by zero if there are no topics in the unit
+        const hoursPerTopic =
+          topicsInUnit.length > 0
+            ? Math.max(1, Math.floor(unitHours / topicsInUnit.length))
+            : 0;
+  
         topicsInUnit.forEach((topic, topicIndex) => {
-          let topicHours = topicIndex === topicsInUnit.length - 1 
-            ? unitHours - (hoursPerTopic * (topicsInUnit.length - 1)) // Assign remaining unit hours to last topic
-            : hoursPerTopic;
-            
-          // Create schedule entries for this topic
+          const topicHours =
+            topicIndex === topicsInUnit.length - 1
+              ? unitHours - hoursPerTopic * (topicsInUnit.length - 1)
+              : hoursPerTopic;
+  
           for (let i = 0; i < topicHours; i++) {
             generatedSchedule.push({
               id: generatedSchedule.length + 1,
@@ -70,9 +86,13 @@ const Schedule = () => {
               unit: unit.title,
               topic: topic.title,
               description: topic.content.substring(0, 100) + "...",
-              activities: i === 0 ? "Introduction, Lecture" : i === topicHours - 1 ? "Review, Exercise" : "Lecture, Discussion"
+              activities:
+                i === 0
+                  ? "Introduction, Lecture"
+                  : i === topicHours - 1
+                  ? "Review, Exercise"
+                  : "Lecture, Discussion"
             });
-            
             currentHour++;
             if (currentHour > hoursPerWeek) {
               currentHour = 1;
@@ -81,8 +101,9 @@ const Schedule = () => {
           }
         });
       });
-      
+  
       setSchedule(generatedSchedule);
+      console.log(generatedSchedule);
       toast.success("Schedule generated successfully");
     } catch (error) {
       console.error("Error generating schedule:", error);
@@ -91,15 +112,15 @@ const Schedule = () => {
       setLoading(false);
     }
   };
-
+  
   const groupTopicsByUnit = (topics) => {
     const units = [];
     let currentUnit = null;
-    
-    topics.forEach(topic => {
-      // Check if this topic starts a new unit
+  
+    topics.forEach((topic) => {
+      // Check if this topic starts a new unit based on its title
       const isUnitTitle = /^(Unit|Chapter|Section)\s+[IVXLCDM0-9]+/i.test(topic.title);
-      
+  
       if (isUnitTitle) {
         currentUnit = {
           title: topic.title,
@@ -117,27 +138,32 @@ const Schedule = () => {
         units.push(currentUnit);
       }
     });
-    
-    // If we ended up with empty units, fix that
-    return units.filter(unit => unit.topics.length > 0);
+  
+    return units.filter((unit) => unit.topics.length > 0);
   };
-
+  
   const getDayFromHour = (hour) => {
-    switch(hour) {
-      case 1: return "Monday";
-      case 2: return "Wednesday";
-      case 3: return "Friday";
-      default: return "Monday";
+    // You can adjust this logic if you need more days.
+    switch (hour) {
+      case 1:
+        return "Monday";
+      case 2:
+        return "Wednesday";
+      case 3:
+        return "Friday";
+      default:
+        return "Monday";
     }
   };
-
+  
   const handleTotalWeeksChange = (e) => {
     setTotalWeeks(parseInt(e.target.value, 10));
   };
-
+  
   const handleHoursPerWeekChange = (e) => {
     setHoursPerWeek(parseInt(e.target.value, 10));
   };
+  
 
   const downloadSchedule = () => {
     if (schedule.length === 0) {
@@ -282,6 +308,7 @@ const Schedule = () => {
         </div>
       )}
     </div>
+    
   );
 };
 
