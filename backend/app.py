@@ -41,6 +41,7 @@ def extract_text_from_pdf(file_path):
     except Exception as e:
         print(f"Error extracting text from PDF: {e}")
         return ""
+    
 
 def extract_topics(text):
     # Simple extraction of topics from text

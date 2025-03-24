@@ -1,43 +1,109 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { toast } from "react-hot-toast";
-import jsPDF from "jspdf";
-import "jspdf-autotable";
-import axios from "axios";
 
 const Schedule = () => {
   const [schedule, setSchedule] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [syllabusData, setSyllabusData] = useState(null);
+  const [syllabusData, setSyllabusData] = useState();
   const [totalWeeks, setTotalWeeks] = useState(16);
   const [hoursPerWeek, setHoursPerWeek] = useState(3);
 
   useEffect(() => {
+    // Check if syllabus data exists in localStorage
     const savedSyllabus = localStorage.getItem('currentSyllabus');
+  
     if (savedSyllabus) {
-      setSyllabusData(JSON.parse(savedSyllabus));
+      const syllabus = JSON.parse(savedSyllabus);
+   
+      setSyllabusData(syllabus);
     }
     
-    if (localStorage.getItem('materialsGenerated') === 'true') {
-      generateSchedule();
-    }
+
   }, []);
+
+
+  
 
   const generateSchedule = async () => {
     if (!syllabusData) {
       toast.error("Please upload a syllabus first");
       return;
     }
-
+  
     setLoading(true);
-    
+  
     try {
-      const response = await axios.post('/generate_schedule', {
-        syllabus: syllabusData,
-        total_weeks: totalWeeks,
-        hours_per_week: hoursPerWeek
+      // Determine if the syllabus data includes a separate units array.
+      // If so, we assume that each unit corresponds to one topic entry.
+      let units = [];
+      if (syllabusData.units && syllabusData.topics) {
+        // Build units by matching the order of units with topics
+        units = syllabusData.units.map((unitName, index) => ({
+          title: unitName,
+          topics: [syllabusData.topics[index]]
+        }));
+      } else {
+        // Fall back to grouping topics by detecting unit titles
+        const topics = syllabusData.topics || [];
+        units = groupTopicsByUnit(topics);
+      }
+      console.log(units);
+  
+      // Calculate total course hours and hours per unit
+      const totalHours = totalWeeks * hoursPerWeek;
+      const hoursPerUnit = Math.floor(totalHours / units.length);
+  
+      let generatedSchedule = [];
+      let currentWeek = 1;
+      let currentHour = 1;
+  
+      units.forEach((unit, unitIndex) => {
+        // For the last unit, assign any remaining hours
+        const unitHours =
+          unitIndex === units.length - 1
+            ? totalHours - hoursPerUnit * (units.length - 1)
+            : hoursPerUnit;
+  
+        const topicsInUnit = unit.topics;
+        // Prevent division by zero if there are no topics in the unit
+        const hoursPerTopic =
+          topicsInUnit.length > 0
+            ? Math.max(1, Math.floor(unitHours / topicsInUnit.length))
+            : 0;
+  
+        topicsInUnit.forEach((topic, topicIndex) => {
+          const topicHours =
+            topicIndex === topicsInUnit.length - 1
+              ? unitHours - hoursPerTopic * (topicsInUnit.length - 1)
+              : hoursPerTopic;
+  
+          for (let i = 0; i < topicHours; i++) {
+            generatedSchedule.push({
+              id: generatedSchedule.length + 1,
+              week: currentWeek,
+              day: getDayFromHour(currentHour),
+              unit: unit.title,
+              topic: topic.title,
+              description: topic.content.substring(0, 100) + "...",
+              activities:
+                i === 0
+                  ? "Introduction, Lecture"
+                  : i === topicHours - 1
+                  ? "Review, Exercise"
+                  : "Lecture, Discussion"
+            });
+            currentHour++;
+            if (currentHour > hoursPerWeek) {
+              currentHour = 1;
+              currentWeek++;
+            }
+          }
+        });
       });
-      setSchedule(response.data);
+  
+      setSchedule(generatedSchedule);
+      console.log(generatedSchedule);
       toast.success("Schedule generated successfully");
     } catch (error) {
       console.error("Error generating schedule:", error);
@@ -46,14 +112,58 @@ const Schedule = () => {
       setLoading(false);
     }
   };
-
+  
+  const groupTopicsByUnit = (topics) => {
+    const units = [];
+    let currentUnit = null;
+  
+    topics.forEach((topic) => {
+      // Check if this topic starts a new unit based on its title
+      const isUnitTitle = /^(Unit|Chapter|Section)\s+[IVXLCDM0-9]+/i.test(topic.title);
+  
+      if (isUnitTitle) {
+        currentUnit = {
+          title: topic.title,
+          topics: []
+        };
+        units.push(currentUnit);
+      } else if (currentUnit) {
+        currentUnit.topics.push(topic);
+      } else {
+        // If no unit has been started yet, create a default one
+        currentUnit = {
+          title: "Unit 1",
+          topics: [topic]
+        };
+        units.push(currentUnit);
+      }
+    });
+  
+    return units.filter((unit) => unit.topics.length > 0);
+  };
+  
+  const getDayFromHour = (hour) => {
+    // You can adjust this logic if you need more days.
+    switch (hour) {
+      case 1:
+        return "Monday";
+      case 2:
+        return "Wednesday";
+      case 3:
+        return "Friday";
+      default:
+        return "Monday";
+    }
+  };
+  
   const handleTotalWeeksChange = (e) => {
     setTotalWeeks(parseInt(e.target.value, 10));
   };
-
+  
   const handleHoursPerWeekChange = (e) => {
     setHoursPerWeek(parseInt(e.target.value, 10));
   };
+  
 
   const downloadSchedule = () => {
     if (schedule.length === 0) {
@@ -61,11 +171,13 @@ const Schedule = () => {
       return;
     }
     
+    // Create CSV content
     let csv = "Week,Day,Unit,Topic,Description,Activities\n";
     schedule.forEach(item => {
       csv += `${item.week},"${item.day}","${item.unit}","${item.topic}","${item.description.replace(/"/g, '""')}","${item.activities}"\n`;
     });
     
+    // Create and download the file
     const blob = new Blob([csv], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -77,84 +189,6 @@ const Schedule = () => {
     URL.revokeObjectURL(url);
     
     toast.success("Schedule downloaded as CSV");
-  };
-
-  const downloadScheduleAsPDF = () => {
-    if (schedule.length === 0) {
-      toast.error("No schedule to download");
-      return;
-    }
-
-    const doc = new jsPDF();
-    doc.autoTable({
-      head: [['Week', 'Day', 'Unit', 'Topic', 'Description', 'Activities']],
-      body: schedule.map(item => [item.week, item.day, item.unit, item.topic, item.description, item.activities])
-    });
-    doc.save('course_schedule.pdf');
-    toast.success("Schedule downloaded as PDF");
-  };
-
-  const saveExport = () => {
-    if (schedule.length === 0) {
-      toast.error("No schedule to export");
-      return;
-    }
-
-    let csv = "Week,Day,Unit,Topic,Description,Activities\n";
-    schedule.forEach(item => {
-      csv += `${item.week},"${item.day}","${item.unit}","${item.topic}","${item.description.replace(/"/g, '""')}","${item.activities}"\n`;
-    });
-
-    const blob = new Blob([csv], { type: 'text/csv' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'course_schedule_export.csv';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-
-    toast.success("Schedule exported successfully");
-  };
-
-  const downloadLessonPlannerAsPDF = () => {
-    if (schedule.length === 0) {
-      toast.error("No lesson planner to download");
-      return;
-    }
-
-    const doc = new jsPDF();
-    doc.autoTable({
-      head: [['Week', 'Day', 'Unit', 'Topic', 'Description', 'Activities']],
-      body: schedule.map(item => [item.week, item.day, item.unit, item.topic, item.description, item.activities])
-    });
-    doc.save('lesson_planner.pdf');
-    toast.success("Lesson planner downloaded as PDF");
-  };
-
-  const exportLessonPlanner = () => {
-    if (schedule.length === 0) {
-      toast.error("No lesson planner to export");
-      return;
-    }
-
-    let csv = "Week,Day,Unit,Topic,Description,Activities\n";
-    schedule.forEach(item => {
-      csv += `${item.week},"${item.day}","${item.unit}","${item.topic}","${item.description.replace(/"/g, '""')}","${item.activities}"\n`;
-    });
-
-    const blob = new Blob([csv], { type: 'text/csv' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'lesson_planner_export.csv';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-
-    toast.success("Lesson planner exported successfully");
   };
 
   return (
@@ -216,38 +250,15 @@ const Schedule = () => {
           <div className="mt-4 text-right">
             <button
               onClick={downloadSchedule}
-              className="py-2 px-4 bg-green-100 hover:bg-green-200 text-green-800 font-medium rounded-lg transition-colors mr-2"
+              className="py-2 px-4 bg-green-100 hover:bg-green-200 text-green-800 font-medium rounded-lg transition-colors"
             >
-              Download CSV
-            </button>
-            <button
-              onClick={downloadScheduleAsPDF}
-              className="py-2 px-4 bg-blue-100 hover:bg-blue-200 text-blue-800 font-medium rounded-lg transition-colors mr-2"
-            >
-              Download PDF
-            </button>
-            <button
-              onClick={saveExport}
-              className="py-2 px-4 bg-yellow-100 hover:bg-yellow-200 text-yellow-800 font-medium rounded-lg transition-colors mr-2"
-            >
-              Save Export
-            </button>
-            <button
-              onClick={downloadLessonPlannerAsPDF}
-              className="py-2 px-4 bg-purple-100 hover:bg-purple-200 text-purple-800 font-medium rounded-lg transition-colors mr-2"
-            >
-              Download Lesson Planner PDF
-            </button>
-            <button
-              onClick={exportLessonPlanner}
-              className="py-2 px-4 bg-orange-100 hover:bg-orange-200 text-orange-800 font-medium rounded-lg transition-colors"
-            >
-              Export Lesson Planner CSV
+              Download Schedule
             </button>
           </div>
         )}
       </motion.div>
       
+      {/* Schedule Display */}
       {schedule.length > 0 ? (
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -297,7 +308,8 @@ const Schedule = () => {
         </div>
       )}
     </div>
+    
   );
 };
 
-export default Schedule;
+export default Schedule; 

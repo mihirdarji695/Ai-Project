@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Save, FileCheck, Table, Upload, FileText } from "lucide-react";
 import { uploadSyllabus, generateCoPoMapping } from "../services/api";
 import { toast } from "react-hot-toast";
+import jsPDF from "jspdf";
 
 const CoPo = () => {
   // State for form inputs
@@ -96,10 +97,56 @@ const CoPo = () => {
       toast.error("Please generate CO-PO mapping first");
       return;
     }
-    
+  
     toast.info("Preparing PDF download...");
-    // In a real implementation, you would call the backend PDF generation API
-    toast.success("PDF download would start automatically");
+  
+    const doc = new jsPDF();
+    doc.setFontSize(15);
+    doc.text("CO-PO Mapping Report", 10, 10);
+  
+    // Add CO-PO mapping table to the PDF
+    const tableData = [];
+    Object.entries(mapping).forEach(([coId, poMapping]) => {
+      const row = [coId];
+      Object.keys(programOutcomes).forEach(poId => {
+        row.push(poMapping[poId] || "-");
+      });
+      tableData.push(row);
+    });
+  
+    doc.autoTable({
+      head: [["CO", ...Object.keys(programOutcomes)]],
+      body: tableData,
+      theme: "plain",
+      styles: {
+        fontSize: 12,
+        cellPadding: 5,
+      },
+    });
+  
+    // Add attainment levels to the PDF
+    const attainmentLevels = {};
+    Object.keys(programOutcomes).forEach(poId => {
+      const totalMappings = Object.values(mapping).reduce((sum, poMap) => sum + (poMap[poId] || 0), 0);
+      const maxPossible = Object.keys(mapping).length * 3; // Assuming max strength is 3
+      const percentage = maxPossible > 0 ? Math.round((totalMappings / maxPossible) * 100) : 0;
+      attainmentLevels[poId] = percentage;
+    });
+  
+    doc.setFontSize(12);
+    doc.text("Attainment Levels:", 10, doc.internal.pageSize.height - 50);
+    Object.entries(attainmentLevels).forEach(([poId, percentage]) => {
+      doc.text(`${poId}: ${percentage}%`, 10, doc.internal.pageSize.height - 30);
+    });
+  
+    // Save the PDF document
+    const pdfBlob = new Blob([doc.output()], { type: 'application/pdf' });
+const url = URL.createObjectURL(pdfBlob);
+const a = document.createElement('a');
+a.href = url;
+a.download = 'co-po-mapping-report.pdf';
+a.click();
+URL.revokeObjectURL(url);
   };
 
   // Animation variants
@@ -242,7 +289,7 @@ const CoPo = () => {
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="mt-2 bg-gradient-to-r from-teal-500 to-emerald-600 text-white px-6 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all"
+            className="mt-2 bg-gradient-to-r from-teal-500 to-emerald-600 text-white px-6 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all flex items-center"
             onClick={handleAddObjective}
           >
             Add Objective
@@ -366,7 +413,6 @@ const CoPo = () => {
           whileTap={{ scale: 0.95 }}
           className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all flex items-center"
           onClick={handleDownloadReport}
-          disabled={Object.keys(mapping).length === 0}
         >
           <FileText className="w-4 h-4 mr-2" />
           Download Report
@@ -375,9 +421,17 @@ const CoPo = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="bg-gradient-to-r from-teal-500 to-teal-700 text-white px-6 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all"
-          onClick={() => syllabusData ? handleGenerateMapping() : toast.error("Please upload a syllabus first")}
+          onClick={handleDownloadReport}
         >
           Analyze Alignment
+        </motion.button>
+        <motion.button 
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all flex items-center"
+          onClick={handleDownloadReport}
+        >
+          Generate Report
         </motion.button>
       </motion.div>
     </div>
