@@ -20,7 +20,7 @@ const App = () => {
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
                   <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600">
-                    AI Education Toolkit
+                  AI SAMADHAN 
                   </span>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">

@@ -119,6 +119,10 @@ const Dashboard = () => {
     }
   };
 
+  const openFile = (url) => {
+    window.open(url, '_blank');
+  };
+
   const generateAllMaterial = async () => {
     if (!fileData) {
       toast.error("Please upload a syllabus file first");
@@ -170,7 +174,43 @@ const Dashboard = () => {
         return updated;
       });
 
-      toast.success("All materials generated successfully");
+      // Modified download function to handle downloads sequentially and open in new tabs
+      const downloadAndOpenFile = async (url, filename) => {
+        try {
+          const response = await fetch(url);
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          const blob = await response.blob();
+          const downloadUrl = window.URL.createObjectURL(blob);
+
+          // Create download link
+          const downloadLink = document.createElement("a");
+          downloadLink.href = downloadUrl;
+          downloadLink.download = filename;
+          downloadLink.click();
+
+          // Open in new tab
+          window.open(downloadUrl, '_blank');
+        } catch (error) {
+          console.error(`Error handling file ${filename}:`, error);
+          toast.error(`Failed to process ${filename}: ${error.message}`);
+        }
+      };
+
+      // Process files sequentially with delays
+      await downloadAndOpenFile(response.materials.questionBankUrl, "QuestionBank.pdf");
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      await downloadAndOpenFile(response.materials.lessonPlanUrl, "LessonPlan.pdf");
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      await downloadAndOpenFile(response.materials.copoMappingUrl, "COPOMapping.pdf");
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      await downloadAndOpenFile(response.materials.scheduleUrl, "Schedule.pdf");
+
+      toast.success("All materials generated and downloaded successfully");
     } catch (error) {
       console.error("Error generating all materials:", error);
 
