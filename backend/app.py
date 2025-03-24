@@ -10,6 +10,8 @@ import csv
 import datetime
 from werkzeug.utils import secure_filename
 import PyPDF2
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
 
 app = Flask(__name__)
 CORS(app)  # Enable Cross-Origin Resource Sharing
@@ -936,7 +938,7 @@ def generate_assessment_methods():
     return random.sample(methods, count)
 
 # Add the generate-schedule endpoint
-@app.route('/api/generate-schedule', methods=['POST'])
+@app.route('/api/generate-schedule', methods=['POST'], endpoint='generate_schedule')
 def generate_schedule():
     """Generate a day-wise schedule for a course"""
     try:
@@ -999,6 +1001,159 @@ def generate_schedule():
         print(f"Error generating schedule: {e}")
         return jsonify({'error': str(e)}), 500
 
-# Run the application
+@app.route('/generate_schedule', methods=['POST'], endpoint='generate_schedule_v2')
+def generate_schedule_v2():
+    data = request.json
+    syllabus = data.get('syllabus')
+    total_weeks = data.get('total_weeks', 16)
+    hours_per_week = data.get('hours_per_week', 3)
+
+    if not syllabus:
+        return jsonify({"error": "Syllabus data is required"}), 400
+
+    topics = syllabus.get('topics', [])
+    units = group_topics_by_unit(topics)
+    
+    total_hours = total_weeks * hours_per_week
+    hours_per_unit = total_hours // len(units)
+    
+    generated_schedule = []
+    current_week = 1
+    current_hour = 1
+    
+    for unit_index, unit in enumerate(units):
+        unit_hours = hours_per_unit if unit_index < len(units) - 1 else total_hours - hours_per_unit * (len(units) - 1)
+        topics_in_unit = unit['topics']
+        hours_per_topic = max(1, unit_hours // len(topics_in_unit))
+        
+        for topic_index, topic in enumerate(topics_in_unit):
+            topic_hours = hours_per_topic if topic_index < len(topics_in_unit) - 1 else unit_hours - hours_per_topic * (len(topics_in_unit) - 1)
+            
+            for i in range(topic_hours):
+                generated_schedule.append({
+                    "week": current_week,
+                    "day": get_day_from_hour(current_hour),
+                    "unit": unit['title'],
+                    "topic": topic['title'],
+                    "description": topic['content'][:100] + "...",
+                    "activities": "Introduction, Lecture" if i == 0 else "Review, Exercise" if i == topic_hours - 1 else "Lecture, Discussion"
+                })
+                
+                current_hour += 1
+                if current_hour > hours_per_week:
+                    current_hour = 1
+                    current_week += 1
+    
+    return jsonify(generated_schedule)
+
+def group_topics_by_unit(topics):
+    units = []
+    current_unit = None
+    
+    for topic in topics:
+        is_unit_title = bool(re.match(r'^(Unit|Chapter|Section)\s+[IVXLCDM0-9]+', topic['title'], re.I))
+        
+        if is_unit_title:
+            current_unit = {"title": topic['title'], "topics": []}
+            units.append(current_unit)
+        elif current_unit:
+            current_unit['topics'].append(topic)
+        else:
+            current_unit = {"title": "Unit 1", "topics": [topic]}
+            units.append(current_unit)
+    
+    return [unit for unit in units if unit['topics']]
+
+def get_day_from_hour(hour):
+    return ["Monday", "Wednesday", "Friday"][(hour - 1) % 3]
+
+@app.route('/download_schedule_pdf', methods=['POST'])
+def download_schedule_pdf():
+    data = request.json
+    schedule = data.get('schedule', [])
+
+    buffer = io.BytesIO()
+    c = canvas.Canvas(buffer, pagesize=letter)
+    width, height = letter
+
+    c.drawString(30, height - 40, "Course Schedule")
+    c.drawString(30, height - 60, "Week | Day | Unit | Topic | Description | Activities")
+
+    y = height - 80
+    for item in schedule:
+        text = f"{item['week']} | {item['day']} | {item['unit']} | {item['topic']} | {item['description']} | {item['activities']}"
+        c.drawString(30, y, text)
+        y -= 20
+        if y < 40:
+            c.showPage()
+            y = height - 40
+
+    c.save()
+    buffer.seek(0)
+
+    return send_file(buffer, as_attachment=True, download_name='course_schedule.pdf', mimetype='application/pdf')
+
+@app.route('/save_export', methods=['POST'])
+def save_export():
+    data = request.json
+    schedule = data.get('schedule', [])
+
+    output = io.StringIO()
+    writer = csv.writer(output)
+    writer.writerow(['Week', 'Day', 'Unit', 'Topic', 'Description', 'Activities'])
+
+    for item in schedule:
+        writer.writerow([item['week'], item['day'], item['unit'], item['topic'], item['description'], item['activities']])
+
+    response = make_response(output.getvalue())
+    response.headers["Content-Disposition"] = "attachment; filename=course_schedule_export.csv"
+    response.headers["Content-type"] = "text/csv"
+
+    return response
+
+@app.route('/download_lesson_planner_pdf', methods=['POST'])
+def download_lesson_planner_pdf():
+    data = request.json
+    schedule = data.get('schedule', [])
+
+    buffer = io.BytesIO()
+    c = canvas.Canvas(buffer, pagesize=letter)
+    width, height = letter
+
+    c.drawString(30, height - 40, "Lesson Planner")
+    c.drawString(30, height - 60, "Week | Day | Unit | Topic | Description | Activities")
+
+    y = height - 80
+    for item in schedule:
+        text = f"{item['week']} | {item['day']} | {item['unit']} | {item['topic']} | {item['description']} | {item['activities']}"
+        c.drawString(30, y, text)
+        y -= 20
+        if y < 40:
+            c.showPage()
+            y = height - 40
+
+    c.save()
+    buffer.seek(0)
+
+    return send_file(buffer, as_attachment=True, download_name='lesson_planner.pdf', mimetype='application/pdf')
+
+@app.route('/export_lesson_planner', methods=['POST'])
+def export_lesson_planner():
+    data = request.json
+    schedule = data.get('schedule', [])
+
+    output = io.StringIO()
+    writer = csv.writer(output)
+    writer.writerow(['Week', 'Day', 'Unit', 'Topic', 'Description', 'Activities'])
+
+    for item in schedule:
+        writer.writerow([item['week'], item['day'], item['unit'], item['topic'], item['description'], item['activities']])
+
+    response = make_response(output.getvalue())
+    response.headers["Content-Disposition"] = "attachment; filename=lesson_planner_export.csv"
+    response.headers["Content-type"] = "text/csv"
+
+    return response
+
 if __name__ == '__main__':
-    app.run(debug=True, port=5000) 
+    app.run(debug=True, port=5000)

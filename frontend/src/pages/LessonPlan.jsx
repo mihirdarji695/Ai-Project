@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { X, FileUp, Download, FileEdit, Calendar, Book } from "lucide-react";
 import { uploadSyllabus, generateLessonPlan } from "../services/api";
 import { toast } from "react-hot-toast";
+import jsPDF from "jspdf"; // Add this import
 
 const LessonPlan = () => {
   const [status, setStatus] = useState("Waiting for upload...");
@@ -97,9 +98,40 @@ const LessonPlan = () => {
       toast.error("Please generate a lesson plan first");
       return;
     }
-    
-    toast.info("Preparing PDF download...");
-    toast.success("PDF download would start automatically");
+
+    const doc = new jsPDF();
+    doc.setFontSize(18);
+    doc.text("Lesson Plan", 10, 10);
+    doc.setFontSize(12);
+
+    lessonPlan.forEach((item, index) => {
+      const yOffset = 20 + (index % 4) * 60; // Increase spacing between sections
+      if (index > 0 && index % 4 === 0) {
+        doc.addPage(); // Add a new page after every 4 items
+      }
+  
+      doc.setFontSize(14);
+      doc.text(`Week ${item.week}, Day ${item.day}`, 10, yOffset);
+      
+      doc.setFontSize(12);
+      doc.setFont("helvetica", "normal");
+      doc.text(`Unit:`, 10, yOffset + 10);
+      doc.text(item.unit, 40, yOffset + 10);
+      
+      doc.text(`Topic:`, 10, yOffset + 20);
+      doc.text(item.topic, 40, yOffset + 20);
+      
+      doc.text(`Teaching Method:`, 10, yOffset + 30);
+      doc.text(item.teachingMethod, 50, yOffset + 30, { maxWidth: 140 });
+      
+      doc.text(`Activities:`, 10, yOffset + 40);
+      doc.text(item.activities, 50, yOffset + 40, { maxWidth: 140 });
+      
+      doc.line(10, yOffset + 50, 200, yOffset + 50); // Add a line separator
+    });
+  
+    doc.save("lesson_plan.pdf");
+    toast.success("PDF download started");
   };
   
   const weekGroups = {};
@@ -355,6 +387,7 @@ const LessonPlan = () => {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="mt-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all w-full"
+            onClick={downloadAsPDF} // Add this line to save and export button
           >
             Save & Export
           </motion.button>
