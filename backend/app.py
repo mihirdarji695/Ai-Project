@@ -15,6 +15,7 @@ from reportlab.pdfgen import canvas
 import textwrap
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+import google.generativeai as genai
 
 # Initialize Flask app first
 app = Flask(__name__)
@@ -32,6 +33,21 @@ course_materials = []
 questions = []
 lesson_plans = []
 copo_mappings = []
+
+# Gemini AI Configuration
+GEMINI_API_KEY = "AIzaSyCv33tpLm3fpLCw1NC69x-X6AAhGoDfEy8"
+  # Replace with your Gemini API key
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel('gemini-pro')
+
+# Helper function for Gemini AI generation
+def generate_with_gemini(prompt):
+    try:
+        response = model.generate_content(prompt)
+        return response.text
+    except Exception as e:
+        print(f"Error generating with Gemini: {e}")
+        return None
 
 # Helper functions for extracting text from syllabus
 def extract_text_from_pdf(file_path):
@@ -191,133 +207,30 @@ def upload_syllabus():
 @app.route('/api/generate-questions', methods=['POST'])
 def generate_questions():
     data = request.json
-    print("Received request data:", data)
     if not data:
         return jsonify({"error": "Missing request data"}), 400
     
-    # Check if the required fields are present
-    if 'topics' not in data:
-        return jsonify({"error": "Missing 'topics' field"}), 400
-    if 'taxonomies' not in data:
-        return jsonify({"error": "Missing 'taxonomies' field"}), 400
-    if 'difficulty' not in data:
-        return jsonify({"error": "Missing 'difficulty' field"}), 400
+    topics = data.get('topics', [])
+    taxonomies = data.get('taxonomies', [])
+    difficulty = data.get('difficulty', 'medium')
     
-    topics = data['topics']
-    selected_taxonomies = data['taxonomies']
-    difficulty = data['difficulty']
-    syllabus_id = data.get('syllabus_id')
-    
-    # If syllabus_id is provided, use topics from that syllabus
-    if syllabus_id and syllabus_id in syllabi:
-        syllabus_topics = [{"title": title, "content": content} for title, content in syllabi[syllabus_id]["topics"]]
-        # If specific topics are also provided, prioritize those
-        if not topics or len(topics) == 0:
-            topics = syllabus_topics
-    
-    # Ensure topics has content
-    if len(topics) == 0:
-        return jsonify({"error": "No topics available to generate questions"}), 400
-    
-    # Templates for different taxonomy levels
-    taxonomy_templates = {
-        "Remember": [
-            "Define the concept of {}.",
-            "List the key components of {}.",
-            "Identify the main characteristics of {}.",
-            "What is {}?",
-            "Recall the definition of {}."
-        ],
-        "Understand": [
-            "Explain how {} works.",
-            "Describe the process of {}.",
-            "Differentiate between {} and related concepts.",
-            "Summarize the key ideas of {}.",
-            "Interpret the significance of {}."
-        ],
-        "Apply": [
-            "How would you use {} to solve this problem: {}?",
-            "Apply the concept of {} to this scenario: {}.",
-            "Demonstrate how {} can be implemented in a real-world context.",
-            "Calculate the result using the principles of {}.",
-            "Solve this problem using {}."
-        ],
-        "Analyze": [
-            "Analyze the relationship between {} and other concepts.",
-            "Break down the components of {} and explain their significance.",
-            "Compare and contrast different approaches to {}.",
-            "Examine the evidence for and against {}.",
-            "What are the causes and effects related to {}?"
-        ],
-        "Evaluate": [
-            "Evaluate the effectiveness of {} in the given context.",
-            "Critique the approach taken for {}.",
-            "Justify the use of {} in this situation.",
-            "Assess the importance of {} in the field.",
-            "What are the advantages and disadvantages of {}?"
-        ],
-        "Create": [
-            "Design a new approach to {}.",
-            "Develop an innovative solution using {}.",
-            "Create a model that demonstrates {}.",
-            "Propose a new theory about {}.",
-            "How would you improve the existing concept of {}?"
-        ]
-    }
-    
-    # Generate questions
-    question_bank = []
-    for topic in topics:
-        topic_title = topic.get('title', 'Unknown Topic')
-        topic_content = topic.get('content', '')
-        if not topic_content:
-            continue
-        
-        topic_keywords = re.findall(r'\b\w{5,}\b', topic_content)
-        keywords = [kw for kw in topic_keywords if len(kw) > 4]
-        
-        if not keywords and len(topic_content) > 10:
-            # If no good keywords found, use content fragments
-            content_parts = re.split(r'[,.]', topic_content)
-            keywords = [part.strip() for part in content_parts if len(part.strip()) > 10]
-        
-        if not keywords:
-            # Fallback
-            keywords = [topic_title, "this concept", "the topic"]
-        
-        for taxonomy in selected_taxonomies:
-            templates = taxonomy_templates.get(taxonomy, taxonomy_templates["Remember"])
-            for _ in range(3):  # Generate 3 questions per taxonomy level
-                template = random.choice(templates)
-                keyword = random.choice(keywords)
-                
-                if "{}" in template:
-                    if template.count("{}") > 1:
-                        # For templates with two placeholders (like in Apply level)
-                        scenario = random.choice([
-                            "a classroom setting",
-                            "industry applications",
-                            "research context",
-                            "everyday life",
-                            "solving optimization problems"
-                        ])
-                        question = template.format(keyword, scenario)
-                    else:
-                        question = template.format(keyword)
-                else:
-                    question = template
-                
-                question_bank.append({
-                    "topic": topic_title,
-                    "taxonomy": taxonomy,
-                    "difficulty": difficulty,
-                    "question": question
-                })
-    
-    # Store questions for later retrieval
-    questions.extend(question_bank)
-    
-    return jsonify({"questions": question_bank})
+    prompt = f"""Generate {len(taxonomies) * 2} questions about the following topics:
+Topics: {', '.join([t['content'] for t in topics])}
+Taxonomies: {', '.join(taxonomies)}
+Difficulty: {difficulty}
+Format each question with:
+1. The question text
+2. The taxonomy level
+3. The difficulty level
+4. A suggested answer"""
+
+    response = generate_with_gemini(prompt)
+    if not response:
+        return jsonify({"error": "Failed to generate questions"}), 500
+
+    # Parse the response into structured questions
+    questions = parse_gemini_questions(response)
+    return jsonify({"questions": questions})
 
 @app.route('/api/generate-lesson-plan', methods=['POST'])
 def generate_lesson_plan():
@@ -325,88 +238,75 @@ def generate_lesson_plan():
     if not data:
         return jsonify({"error": "Missing request data"}), 400
     
-    # Handle both direct topic input and syllabus-based input
-    syllabus_id = data.get('syllabus_id')
-    if syllabus_id and syllabus_id in syllabi:
-        topics = [{"title": title, "content": content} for title, content in syllabi[syllabus_id]["topics"]]
-        units = syllabi[syllabus_id]["units"]
-    else:
-        topics = data.get('topics', [])
-        units = data.get('units', [f"Unit {i+1}" for i in range(5)])
-    
-    days_per_week = data.get('daysPerWeek', 3)
+    topics = data.get('topics', [])
     weeks = data.get('weeks', 15)
-    unit_weightage = data.get('unitWeightage', {})
     
-    # If unitWeightage is missing, create equal weightage
-    if not unit_weightage:
-        unit_weightage = {unit: 1 for unit in units}
-    
-    # Calculate days for each unit based on weightage
-    total_days = weeks * days_per_week
-    weightage_sum = sum(unit_weightage.values())
-    
-    unit_days = {}
-    for unit, weight in unit_weightage.items():
-        unit_days[unit] = max(1, round((weight / weightage_sum) * total_days))
-    
-    # Reorganize topics by unit
-    unit_topics = {}
-    for topic in topics:
-        unit = next((u for u in units if u in topic['title']), units[0])
-        unit_topics.setdefault(unit, []).append(topic['content'])
-    
-    # Simple estimation of days per topic (equally distribute within each unit)
-    topic_days = {}
-    for unit, topics_list in unit_topics.items():
-        if unit in unit_days and unit_days[unit] > 0 and topics_list:
-            days_per_topic = max(1, unit_days[unit] // len(topics_list))
-            for topic in topics_list:
-                topic_days[topic] = days_per_topic
-    
-    # Generate lesson plan
-    lesson_plan = []
-    week_count, day_count = 1, 1
-    for unit, days_available in unit_days.items():
-        topics_in_unit = unit_topics.get(unit, [])
-        if not topics_in_unit:
-            continue
-        for topic in topics_in_unit:
-            days_for_topic = topic_days.get(topic, 1)
-            for _ in range(days_for_topic):
-                if week_count > weeks:
-                    break
-                
-                # Add teaching methods and activities
-                teaching_methods = random.choice([
-                    "Lecture", "Discussion", "Group work", "Case study", "Problem-solving", "Presentation"
-                ])
-                activities = random.choice([
-                    "In-class exercises", "Quiz", "Group presentation", "Debate", "Project work", "Reflection paper"
-                ])
-                
-                lesson_plan.append({
-                    "week": week_count,
-                    "day": day_count,
-                    "unit": unit,
-                    "topic": topic,
-                    "teachingMethod": teaching_methods,
-                    "activities": activities
-                })
-                
-                day_count += 1
-                if day_count > days_per_week:
-                    day_count = 1
-                    week_count += 1
-    
-    # Store lesson plan for later retrieval
-    lesson_plans.append({
-        "created_at": datetime.datetime.now().isoformat(),
-        "syllabus_id": syllabus_id if syllabus_id else None,
-        "plan": lesson_plan
-    })
-    
+    prompt = f"""Create a {weeks}-week lesson plan for the following topics:
+Topics: {', '.join([t['content'] for t in topics])}
+Include for each week:
+1. Learning objectives
+2. Teaching methods
+3. Activities
+4. Assessment methods"""
+
+    response = generate_with_gemini(prompt)
+    if not response:
+        return jsonify({"error": "Failed to generate lesson plan"}), 500
+
+    lesson_plan = parse_gemini_lesson_plan(response)
     return jsonify({"lessonPlan": lesson_plan})
+
+def parse_gemini_questions(response):
+    """Parse Gemini's response into structured questions"""
+    questions = []
+    current_question = {}
+    
+    for line in response.split('\n'):
+        line = line.strip()
+        if not line:
+            if current_question:
+                questions.append(current_question)
+                current_question = {}
+        elif line.startswith('Question:'):
+            current_question['question'] = line[9:].strip()
+        elif line.startswith('Taxonomy:'):
+            current_question['taxonomy'] = line[9:].strip()
+        elif line.startswith('Difficulty:'):
+            current_question['difficulty'] = line[11:].strip()
+        elif line.startswith('Answer:'):
+            current_question['answer'] = line[7:].strip()
+    
+    if current_question:
+        questions.append(current_question)
+    
+    return questions
+
+def parse_gemini_lesson_plan(response):
+    """Parse Gemini's response into structured lesson plan"""
+    weeks = []
+    current_week = {}
+    
+    for line in response.split('\n'):
+        line = line.strip()
+        if not line:
+            if current_week:
+                weeks.append(current_week)
+                current_week = {}
+        elif line.startswith('Week'):
+            current_week = {'week': line.split(':')[0].strip()}
+        elif line.startswith('Objectives:'):
+            current_week['objectives'] = line[11:].strip()
+        elif line.startswith('Methods:'):
+            current_week['methods'] = line[8:].strip()
+        elif line.startswith('Activities:'):
+            current_week['activities'] = line[11:].strip()
+        elif line.startswith('Assessment:'):
+            current_week['assessment'] = line[11:].strip()
+    
+    if current_week:
+        weeks.append(current_week)
+    
+    return weeks
 
 @app.route('/api/generate-copo-mapping', methods=['POST'])
 def generate_copo_mapping():
